@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Fruit Brust</title>
+    <title>Fruit Burst</title>
     <!-- Daisy UI and Tailwind  -->
     <link
       href="https://cdn.jsdelivr.net/npm/daisyui@3.5.0/dist/full.css"
@@ -33,6 +33,8 @@
               clifford: "#da373d",
               "theme-color": "#F85559",
               "theme-color-secondary": "#121212",
+              "border-color": "rgba(18, 18, 18, 0.10)",
+              "text-color-secondary": "rgba(18, 18, 18, 0.60)",
             },
           },
         },
@@ -47,6 +49,7 @@
   </head>
   <body class="font-montserrat">
     <header class="container mx-auto px-5 md:px-10">
+      <!-- nav starts  -->
       <nav
         class="lg:bg-theme-color text-white lg:mt-5 px-3 py-3 md:py-7 rounded-full"
       >
@@ -107,7 +110,7 @@
         </div>
       </nav>
       <!-- carousel starts -->
-      <div class="mt-2 md:mt-6">
+      <div class="mt-3 md:mt-10">
         <div class="carousel w-full text-center h-[300px] md:h-[600px]">
           <div
             id="slide1"
@@ -249,5 +252,248 @@
         </div>
       </div>
     </header>
+    <!-- main starts  -->
+    <main class="container mx-auto px-5 md:px-10">
+      <section id="deal-of-the-day" class="mt-3 md:mt-10">
+        <!-- text-content and countdown starts  -->
+        <div class="flex justify-between">
+          <div>
+            <h1 class="text-5xl text-theme-color-secondary font-extrabold mb-5">
+              Deal of the day
+            </h1>
+            <p class="text-base text-text-color-secondary">
+              Contrary to popular belief, is not simply random text. It has
+              roots in a piece of classical <br />Latin literature from 45 BC,
+              making it over 2000 years old.
+            </p>
+          </div>
+          <div>
+            <div class="grid grid-flow-col gap-5 text-center auto-cols-max">
+              <div class="flex flex-col text-text-color-secondary">
+                <span
+                  class="countdown text-5xl font-extrabold text-theme-color-secondary"
+                >
+                  <span style="--value: 29"></span>
+                </span>
+                Days
+              </div>
+              <div class="flex flex-col text-text-color-secondary">
+                <span
+                  class="countdown text-5xl font-extrabold text-theme-color-secondary"
+                >
+                  <span style="--value: 15"></span>
+                </span>
+                Hours
+              </div>
+              <div class="flex flex-col text-text-color-secondary">
+                <span
+                  class="countdown text-5xl font-extrabold text-theme-color-secondary"
+                >
+                  <span style="--value: 25"></span>
+                </span>
+                Minutes
+              </div>
+              <div class="flex flex-col text-text-color-secondary">
+                <span
+                  class="countdown text-5xl font-extrabold text-theme-color-secondary"
+                >
+                  <span style="--value: 08"></span>
+                </span>
+                Seconds
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- cards and modal part starts  -->
+        <div>
+          <!-- card 1 -->
+          <div class="card w-96 border border-border-color rounded-lg">
+            <figure class="px-10 pt-10 flex-col">
+              <img src="/images/fruit6.png" alt="fruits" class="rounded-xl" />
+              <h1
+                class="text-theme-color-secondary text-2xl font-bold mt-7 border-b-2 px-10 pb-6"
+              >
+                12.90$ - 18.85$
+              </h1>
+            </figure>
+            <div class="card-body items-center text-center">
+              <h2
+                class="card-title text-text-color-secondary text-base font-medium"
+              >
+                Apples
+              </h2>
+              <div class="rating rating-lg rating-half my-5">
+                <input type="radio" name="rating-10" class="rating-hidden" />
+                <input
+                  type="radio"
+                  name="rating-10"
+                  class="bg-[#F85559] mask mask-star-2 mask-half-1"
+                />
+                <input
+                  type="radio"
+                  name="rating-10"
+                  class="bg-[#F85559] mask mask-star-2 mask-half-2"
+                />
+                <input
+                  type="radio"
+                  name="rating-10"
+                  class="bg-[#F85559] mask mask-star-2 mask-half-1"
+                  checked
+                />
+                <input
+                  type="radio"
+                  name="rating-10"
+                  class="bg-[#FBC0A8] mask mask-star-2 mask-half-2"
+                />
+                <input
+                  type="radio"
+                  name="rating-10"
+                  class="bg-[#FBC0A8] mask mask-star-2 mask-half-1"
+                />
+                <input
+                  type="radio"
+                  name="rating-10"
+                  class="bg-[#FBC0A8] mask mask-star-2 mask-half-2"
+                />
+                <input
+                  type="radio"
+                  name="rating-10"
+                  class="bg-[#FBC0A8] mask mask-star-2 mask-half-1"
+                />
+                <input
+                  type="radio"
+                  name="rating-10"
+                  class="bg-[#FBC0A8] mask mask-star-2 mask-half-2"
+                />
+                <input
+                  type="radio"
+                  name="rating-10"
+                  class="bg-[#FBC0A8] mask mask-star-2 mask-half-1"
+                />
+                <input
+                  type="radio"
+                  name="rating-10"
+                  class="bg-[#FBC0A8] mask mask-star-2 mask-half-2"
+                />
+              </div>
+              <div class="card-actions">
+                <!-- Open the modal using ID.showModal() method -->
+                <button class="btn" onclick="my_modal_1.showModal()">
+                  open modal
+                </button>
+                <dialog
+                  id="my_modal_1"
+                  class="modal modal-bottom sm:modal-middle"
+                >
+                  <form method="dialog" class="modal-box">
+                    <h3 class="font-bold text-lg">Hello!</h3>
+                    <p class="py-4">
+                      Press ESC key or click the button below to close
+                    </p>
+                    <div class="modal-action">
+                      <!-- if there is a button in form, it will close the modal -->
+                      <button class="btn">Close</button>
+                    </div>
+                  </form>
+                </dialog>
+              </div>
+            </div>
+          </div>
+          <!-- card 2 -->
+          <div class="card w-96 shadow-xl">
+            <figure class="px-10 pt-10 flex-col">
+              <img src="/images/fruit6.png" alt="fruits" class="rounded-xl" />
+              <h1
+                class="text-theme-color-secondary text-2xl font-bold mt-7 border-b-2 px-10 pb-6"
+              >
+                12.90$ - 18.85$
+              </h1>
+            </figure>
+            <div class="card-body items-center text-center">
+              <h2
+                class="card-title text-text-color-secondary text-base font-medium"
+              >
+                Apples
+              </h2>
+              <div class="rating rating-lg rating-half my-5">
+                <input type="radio" name="rating-10" class="rating-hidden" />
+                <input
+                  type="radio"
+                  name="rating-10"
+                  class="bg-[#F85559] mask mask-star-2 mask-half-1"
+                />
+                <input
+                  type="radio"
+                  name="rating-10"
+                  class="bg-[#F85559] mask mask-star-2 mask-half-2"
+                />
+                <input
+                  type="radio"
+                  name="rating-10"
+                  class="bg-[#F85559] mask mask-star-2 mask-half-1"
+                  checked
+                />
+                <input
+                  type="radio"
+                  name="rating-10"
+                  class="bg-[#FBC0A8] mask mask-star-2 mask-half-2"
+                />
+                <input
+                  type="radio"
+                  name="rating-10"
+                  class="bg-[#FBC0A8] mask mask-star-2 mask-half-1"
+                />
+                <input
+                  type="radio"
+                  name="rating-10"
+                  class="bg-[#FBC0A8] mask mask-star-2 mask-half-2"
+                />
+                <input
+                  type="radio"
+                  name="rating-10"
+                  class="bg-[#FBC0A8] mask mask-star-2 mask-half-1"
+                />
+                <input
+                  type="radio"
+                  name="rating-10"
+                  class="bg-[#FBC0A8] mask mask-star-2 mask-half-2"
+                />
+                <input
+                  type="radio"
+                  name="rating-10"
+                  class="bg-[#FBC0A8] mask mask-star-2 mask-half-1"
+                />
+                <input
+                  type="radio"
+                  name="rating-10"
+                  class="bg-[#FBC0A8] mask mask-star-2 mask-half-2"
+                />
+              </div>
+              <div class="card-actions">
+                <!-- Open the modal using ID.showModal() method -->
+                <button class="btn" onclick="my_modal_2.showModal()">
+                  open modal
+                </button>
+                <dialog
+                  id="my_modal_2"
+                  class="modal modal-bottom sm:modal-middle"
+                >
+                  <form method="dialog" class="modal-box">
+                    <h3 class="font-bold text-lg">Hello!</h3>
+                    <p class="py-4">
+                      Press ESC key or click the button below to close
+                    </p>
+                    <div class="modal-action">
+                      <!-- if there is a button in form, it will close the modal -->
+                      <button class="btn">Close</button>
+                    </div>
+                  </form>
+                </dialog>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
   </body>
 </html>
