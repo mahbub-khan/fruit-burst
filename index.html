@@ -125,10 +125,10 @@
         <div class="carousel w-full text-center h-[300px] md:h-[600px]">
           <div
             id="slide1"
-            class="carousel-item relative w-full flex justify-center items-center rounded-lg bg-cover bg-center bg-[rgba(12,12,12,0.3)] bg-blend-overlay"
+            class="carousel-item relative w-full flex justify-center items-center lg:items-start rounded-lg bg-cover bg-center bg-[rgba(12,12,12,0.3)] bg-blend-overlay"
             style="background-image: url(images/banner1.png)"
           >
-            <div class="text-white">
+            <div class="text-white lg:pt-24">
               <h1 class="text-2xl md:text-7xl font-extrabold leading-tight">
                 Exotic tastes at your <br />
                 doorstep
@@ -264,9 +264,81 @@
           </div>
         </div>
       </div>
+      <!-- fruits-list starts  -->
+      <div
+        class="w-[85%] mx-auto px-12 py-8 bg-white rounded-lg hidden lg:block shadow-lg relative -top-28"
+      >
+        <div class="grid grid-cols-5 gap-5">
+          <!-- fruit-1  -->
+          <div>
+            <div class="h-[112px]">
+              <img
+                class="max-w-[100%] max-h-[100%] mx-auto"
+                src="images/fruit1.png"
+                alt=""
+              />
+            </div>
+            <h3 class="text-text-color=secondary text-center text-xl my-2">
+              Grape
+            </h3>
+          </div>
+          <!-- fruit-2  -->
+          <div>
+            <div class="h-[112px]">
+              <img
+                class="max-w-[100%] max-h-[100%] mx-auto"
+                src="images/fruit2.png"
+                alt=""
+              />
+            </div>
+            <h3 class="text-text-color=secondary text-center text-xl my-2">
+              Orange
+            </h3>
+          </div>
+          <!-- fruit-3  -->
+          <div>
+            <div class="h-[112px]">
+              <img
+                class="max-w-[100%] max-h-[100%] mx-auto"
+                src="images/fruit3.png"
+                alt=""
+              />
+            </div>
+            <h3 class="text-text-color=secondary text-center text-xl my-2">
+              Mango
+            </h3>
+          </div>
+          <!-- fruit-4  -->
+          <div>
+            <div class="h-[112px]">
+              <img
+                class="max-w-[100%] max-h-[100%] mx-auto"
+                src="images/fruit4.png"
+                alt=""
+              />
+            </div>
+            <h3 class="text-text-color=secondary text-center text-xl my-2">
+              Strawberry
+            </h3>
+          </div>
+          <!-- fruit-5  -->
+          <div>
+            <div class="h-[112px]">
+              <img
+                class="max-w-[100%] max-h-[100%] mx-auto"
+                src="images/fruit5.png"
+                alt=""
+              />
+            </div>
+            <h3 class="text-text-color=secondary text-center text-xl my-2">
+              Pomegranate
+            </h3>
+          </div>
+        </div>
+      </div>
     </header>
     <!-- main starts  -->
-    <main class="container mx-auto px-5 md:px-10">
+    <main class="container mx-auto px-5 md:px-10 mt-0 lg:-mt-16">
       <!-- deal of tha day starts  -->
       <section id="deal-of-the-day" class="mt-10">
         <!-- text-content and countdown starts  -->
@@ -551,7 +623,7 @@
           </div>
           <!-- card 2 -->
           <div class="card border border-border-color rounded-lg">
-            <figure class="px-10 pt-10 flex-col">
+            <figure class="px-10 pt-8 flex-col">
               <img src="images/fruit7.png" alt="fruits" class="rounded-xl" />
               <h1
                 class="text-theme-color-secondary text-2xl font-bold mt-7 border-b-2 px-2 pb-6"
