@@ -48,6 +48,14 @@
       .font-montserrat {
         font-family: "Montserrat", sans-serif;
       }
+      .wcu-middle {
+        background-image: url("images/whychoose1.png");
+      }
+      @media screen and (max-width: 1023px) {
+        .wcu-middle {
+          background-image: none;
+        }
+      }
     </style>
   </head>
   <body class="font-montserrat">
@@ -84,7 +92,7 @@
               </ul>
             </div>
             <ul
-              class="menu menu-horizontal px-1 hidden lg:inline-flex text-base xl:text-lg font-medium"
+              class="menu menu-horizontal px-1 hidden lg:inline-flex text-base sm:text-[0.9rem] xl:text-lg font-medium"
             >
               <li><a class="lg:px-2 xl:px-4">Home</a></li>
               <li><a class="lg:px-2 xl:px-4">About Us</a></li>
@@ -280,7 +288,7 @@
           </div>
           <!-- countdown section  -->
           <div class="flex justify-center">
-            <div class="grid grid-flow-col gap-5 text-center auto-cols-max">
+            <div class="grid grid-flow-col gap-2 text-center auto-cols-max">
               <div class="flex flex-col text-text-color-secondary">
                 <span
                   class="countdown text-3xl md:text-5xl font-extrabold text-theme-color-secondary"
@@ -288,6 +296,24 @@
                   <span style="--value: 29"></span>
                 </span>
                 Days
+              </div>
+              <!-- countdown separator  -->
+              <div class="mt-1 sm:mt-3">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                >
+                  <path
+                    d="M12 6.75C11.8011 6.75 11.6103 6.67098 11.4697 6.53033C11.329 6.38968 11.25 6.19891 11.25 6C11.25 5.80109 11.329 5.61032 11.4697 5.46967C11.6103 5.32902 11.8011 5.25 12 5.25C12.1989 5.25 12.3897 5.32902 12.5303 5.46967C12.671 5.61032 12.75 5.80109 12.75 6C12.75 6.19891 12.671 6.38968 12.5303 6.53033C12.3897 6.67098 12.1989 6.75 12 6.75ZM12 12.75C11.8011 12.75 11.6103 12.671 11.4697 12.5303C11.329 12.3897 11.25 12.1989 11.25 12C11.25 11.8011 11.329 11.6103 11.4697 11.4697C11.6103 11.329 11.8011 11.25 12 11.25C12.1989 11.25 12.3897 11.329 12.5303 11.4697C12.671 11.6103 12.75 11.8011 12.75 12C12.75 12.1989 12.671 12.3897 12.5303 12.5303C12.3897 12.671 12.1989 12.75 12 12.75ZM12 18.75C11.8011 18.75 11.6103 18.671 11.4697 18.5303C11.329 18.3897 11.25 18.1989 11.25 18C11.25 17.8011 11.329 17.6103 11.4697 17.4697C11.6103 17.329 11.8011 17.25 12 17.25C12.1989 17.25 12.3897 17.329 12.5303 17.4697C12.671 17.6103 12.75 17.8011 12.75 18C12.75 18.1989 12.671 18.3897 12.5303 18.5303C12.3897 18.671 12.1989 18.75 12 18.75Z"
+                    stroke="#121212"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
               </div>
               <div class="flex flex-col text-text-color-secondary">
                 <span
@@ -297,6 +323,24 @@
                 </span>
                 Hours
               </div>
+              <!-- countdown separator  -->
+              <div class="mt-1 sm:mt-3">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                >
+                  <path
+                    d="M12 6.75C11.8011 6.75 11.6103 6.67098 11.4697 6.53033C11.329 6.38968 11.25 6.19891 11.25 6C11.25 5.80109 11.329 5.61032 11.4697 5.46967C11.6103 5.32902 11.8011 5.25 12 5.25C12.1989 5.25 12.3897 5.32902 12.5303 5.46967C12.671 5.61032 12.75 5.80109 12.75 6C12.75 6.19891 12.671 6.38968 12.5303 6.53033C12.3897 6.67098 12.1989 6.75 12 6.75ZM12 12.75C11.8011 12.75 11.6103 12.671 11.4697 12.5303C11.329 12.3897 11.25 12.1989 11.25 12C11.25 11.8011 11.329 11.6103 11.4697 11.4697C11.6103 11.329 11.8011 11.25 12 11.25C12.1989 11.25 12.3897 11.329 12.5303 11.4697C12.671 11.6103 12.75 11.8011 12.75 12C12.75 12.1989 12.671 12.3897 12.5303 12.5303C12.3897 12.671 12.1989 12.75 12 12.75ZM12 18.75C11.8011 18.75 11.6103 18.671 11.4697 18.5303C11.329 18.3897 11.25 18.1989 11.25 18C11.25 17.8011 11.329 17.6103 11.4697 17.4697C11.6103 17.329 11.8011 17.25 12 17.25C12.1989 17.25 12.3897 17.329 12.5303 17.4697C12.671 17.6103 12.75 17.8011 12.75 18C12.75 18.1989 12.671 18.3897 12.5303 18.5303C12.3897 18.671 12.1989 18.75 12 18.75Z"
+                    stroke="#121212"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </div>
               <div class="flex flex-col text-text-color-secondary">
                 <span
                   class="countdown text-3xl md:text-5xl font-extrabold text-theme-color-secondary"
@@ -304,6 +348,24 @@
                   <span style="--value: 25"></span>
                 </span>
                 Minutes
+              </div>
+              <!-- countdown separator  -->
+              <div class="mt-1 sm:mt-3">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                >
+                  <path
+                    d="M12 6.75C11.8011 6.75 11.6103 6.67098 11.4697 6.53033C11.329 6.38968 11.25 6.19891 11.25 6C11.25 5.80109 11.329 5.61032 11.4697 5.46967C11.6103 5.32902 11.8011 5.25 12 5.25C12.1989 5.25 12.3897 5.32902 12.5303 5.46967C12.671 5.61032 12.75 5.80109 12.75 6C12.75 6.19891 12.671 6.38968 12.5303 6.53033C12.3897 6.67098 12.1989 6.75 12 6.75ZM12 12.75C11.8011 12.75 11.6103 12.671 11.4697 12.5303C11.329 12.3897 11.25 12.1989 11.25 12C11.25 11.8011 11.329 11.6103 11.4697 11.4697C11.6103 11.329 11.8011 11.25 12 11.25C12.1989 11.25 12.3897 11.329 12.5303 11.4697C12.671 11.6103 12.75 11.8011 12.75 12C12.75 12.1989 12.671 12.3897 12.5303 12.5303C12.3897 12.671 12.1989 12.75 12 12.75ZM12 18.75C11.8011 18.75 11.6103 18.671 11.4697 18.5303C11.329 18.3897 11.25 18.1989 11.25 18C11.25 17.8011 11.329 17.6103 11.4697 17.4697C11.6103 17.329 11.8011 17.25 12 17.25C12.1989 17.25 12.3897 17.329 12.5303 17.4697C12.671 17.6103 12.75 17.8011 12.75 18C12.75 18.1989 12.671 18.3897 12.5303 18.5303C12.3897 18.671 12.1989 18.75 12 18.75Z"
+                    stroke="#121212"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
               </div>
               <div class="flex flex-col text-text-color-secondary">
                 <span
@@ -1109,6 +1171,154 @@
                   ><i class="fa-brands fa-linkedin-in"></i
                 ></a>
               </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- why choose us starts  -->
+      <section id="why-choose-us" class="mt-10">
+        <!-- header section  -->
+        <div class="text-center pt-16 md:pt-20 px-4 md:px-0">
+          <h1
+            class="text-theme-color-secondary text-3xl md:text-5xl font-extrabold mb-5"
+          >
+            Why Choose Us
+          </h1>
+          <p class="text-text-color-secondary text-base px-6 lg:px-0">
+            Contrary to popular belief, is not simply random text. It has roots
+            in a piece of classical <br />
+            Latin literature from 45 BC, making it over 2000 years old
+          </p>
+        </div>
+        <!-- content section  -->
+        <div class="grid grid-cols-1 lg:grid-cols-3 gap-6 auto-rows-max">
+          <!-- part-1  -->
+          <div class="mt-5 lg:mt-14 order-2 lg:order-1">
+            <div class="flex flex-col lg:flex-row gap-5 mt-[20px] lg:mt-0">
+              <div class="w-[100px] lg:w-[200px] mx-auto lg:mx-0 mt-[5px]">
+                <img width="100%" src="images/wcu-1.jpg" alt="" />
+              </div>
+              <div class="text-center lg:text-left">
+                <h2 class="text-theme-color-secondary text-2xl font-extrabold">
+                  Dedicated Team
+                </h2>
+                <div
+                  class="w-[100px] h-[2px] mx-auto lg:mx-0 bg-text-color-secondary my-[16px]"
+                ></div>
+                <p class="text-text-color-secondary text-base">
+                  Professional employees are there for you to pick the most
+                  amazing and fresh fruits.
+                </p>
+              </div>
+            </div>
+
+            <div class="flex flex-col lg:flex-row gap-5 mt-[20px] lg:mt-[40px]">
+              <div class="w-[100px] lg:w-[200px] mx-auto lg:mx-0 mt-[5px]">
+                <img width="100%" src="images/wcu-2.jpg" alt="" />
+              </div>
+              <div class="text-center lg:text-left">
+                <h2 class="text-theme-color-secondary text-2xl font-extrabold">
+                  Fresh is Best
+                </h2>
+                <div
+                  class="w-[100px] h-[2px] mx-auto lg:mx-0 bg-text-color-secondary my-[16px]"
+                ></div>
+                <p class="text-text-color-secondary text-base">
+                  Professional employees are there for you to pick the most
+                  amazing and fresh fruits.
+                </p>
+              </div>
+            </div>
+
+            <div class="flex flex-col lg:flex-row gap-5 mt-[20px] lg:mt-[40px]">
+              <div class="w-[100px] lg:w-[200px] mx-auto lg:mx-0 mt-[5px]">
+                <img width="100%" src="images/wcu-3.jpg" alt="" />
+              </div>
+              <div class="text-center lg:text-left">
+                <h2 class="text-theme-color-secondary text-2xl font-extrabold">
+                  Gift Certificates
+                </h2>
+                <div
+                  class="w-[100px] h-[2px] mx-auto lg:mx-0 bg-text-color-secondary my-[16px]"
+                ></div>
+                <p class="text-text-color-secondary text-base">
+                  Professional employees are there for you to pick the most
+                  amazing and fresh fruits.
+                </p>
+              </div>
+            </div>
+          </div>
+          <!-- part-2  -->
+          <div
+            class="wcu-middle mt-10 lg:mt-14 order-1 lg:order-2 bg-cover bg-center rounded-lg"
+          >
+            <div class="mt-[20px] lg:mt-[40px] block lg:hidden">
+              <img width="100%" src="images/whychoose1.png" alt="" />
+            </div>
+          </div>
+          <!-- part-3  -->
+          <div class="mt-5 lg:mt-14 order-3 lg:order-3">
+            <div class="flex flex-col lg:flex-row gap-5 mt-0 lg:mt-0">
+              <div class="text-center lg:text-right order-2 lg:order-1">
+                <h2 class="text-theme-color-secondary text-2xl font-extrabold">
+                  Integrated Supplier
+                </h2>
+                <div
+                  class="w-[100px] h-[2px] mx-auto lg:mx-0 bg-text-color-secondary my-[16px] float-none lg:float-right"
+                ></div>
+                <p class="text-text-color-secondary text-base clear-both">
+                  Professional employees are there for you to pick the most
+                  amazing and fresh fruits.
+                </p>
+              </div>
+
+              <div
+                class="w-[100px] lg:w-[200px] mx-auto lg:mx-0 mt-0 lg:mt-[5px] order-1 lg:order-2"
+              >
+                <img width="100%" src="images/wcu-5.jpg" alt="" />
+              </div>
+            </div>
+
+            <div class="flex flex-col lg:flex-row gap-5 mt-[20px] lg:mt-[40px]">
+              <div class="text-center lg:text-right order-2 lg:order-1">
+                <h2 class="text-theme-color-secondary text-2xl font-extrabold">
+                  Sustainable Practice
+                </h2>
+                <div
+                  class="w-[100px] h-[2px] mx-auto lg:mx-0 bg-text-color-secondary my-[16px] float-none lg:float-right"
+                ></div>
+                <p class="text-text-color-secondary text-base clear-both">
+                  Professional employees are there for you to pick the most
+                  amazing and fresh fruits.
+                </p>
+              </div>
+
+              <div
+                class="w-[100px] lg:w-[200px] mx-auto lg:mx-0 mt-0 lg:mt-[5px] order-1 lg:order-2"
+              >
+                <img width="100%" src="images/wcu-6.jpg" alt="" />
+              </div>
+            </div>
+
+            <div class="flex flex-col lg:flex-row gap-5 mt-[20px] lg:mt-[40px]">
+              <div class="text-center lg:text-right order-2 lg:order-1">
+                <h2 class="text-theme-color-secondary text-2xl font-extrabold">
+                  The Benefits Only
+                </h2>
+                <div
+                  class="w-[100px] h-[2px] mx-auto lg:mx-0 bg-text-color-secondary my-[16px] float-none lg:float-right"
+                ></div>
+                <p class="text-text-color-secondary text-base clear-both">
+                  Professional employees are there for you to pick the most
+                  amazing and fresh fruits.
+                </p>
+              </div>
+
+              <div
+                class="w-[100px] lg:w-[200px] mx-auto lg:mx-0 mt-0 lg:mt-[5px] order-1 lg:order-2"
+              >
+                <img width="100%" src="images/wcu-4.jpg" alt="" />
+              </div>
             </div>
           </div>
         </div>
